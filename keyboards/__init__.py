@@ -1,3 +1,6 @@
-__all__ = []
+__all__ = [
+    "main_menu",
+    "settings"
+]
 
 from . import *
