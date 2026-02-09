@@ -62,6 +62,34 @@
 <p>Каждый участник внёс коммиты в репозиторий. Использовались ветки для фич, документации и код-ревью.</p>
 
 <h3>Unit тестирование</h3>
+<h4>test_article_model.py</h4>
+<p>Unit tests для моделей Article и SavedArticle.</p>
+<p>Тестируются:</p>
+<ul>
+  <li>Article model: создание, валидация, unique external_id</li>
+  <li>SavedArticle model: связи user-article, unique constraint</li>
+</ul>
+
+<h4>test_models.py</h4>
+<p>Unit tests для SQLAlchemy моделей базы данных.</p>
+<p>Тестируются:</p>
+<ul>
+  <li>User model: создание, валидация, default values</li>
+  <li>Topic model: unique constraint (user_id, name)</li>
+  <li>Schedule model: валидация JSON times field</li>
+</ul>
+
+<h4>test_news_api.py</h4>
+<p>Unit tests для NewsApiService.</p>
+<p>Тестируются:</p>
+<ul>
+  <li>ArticleDTO.from_api_response: парсинг GNews API response</li>
+  <li>NewsApiService.search: поиск статей по теме</li>
+  <li>NewsApiService.search_multiple: поиск по нескольким темам</li>
+  <li>NewsApiService.get_top_headlines: получение топ новостей</li>
+  <li>Error handling: rate limits, API errors, network errors</li>
+</ul>
+
 <h3>Интеграционное тестирование</h3>
 <h3>Сборка</h3>
 
