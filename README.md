@@ -208,7 +208,6 @@ up:
 <pre>
 # Остановить приложение
 docker-compose down
-
 # Остановить и удалить volumes
 docker-compose down -v
 </pre>
