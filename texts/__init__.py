@@ -1,6 +1,2 @@
-__all__ = [
-    "start",
-    "settings"
-]
-
+__all__ = ['start', 'settings']
 from . import *

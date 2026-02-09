@@ -7,10 +7,16 @@ from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 
 from config.settings import settings
+from database.connection import close_db, init_db
 from handlers import ErrorHandlingMiddleware
-from handlers import start
+from handlers import digest as digest_handler
+from handlers import library as library_handler
+from handlers import schedule as schedule_handler
 from handlers import settings as settings_handler
-
+from handlers import start
+from handlers import stats as stats_handler
+from services.news_api import news_api_service
+from services.scheduler import start_scheduler, stop_scheduler
 
 # Configure logging - use stdout for Docker compatibility
 logging.basicConfig(
@@ -28,15 +34,20 @@ dp = Dispatcher(storage=MemoryStorage())
 async def on_startup() -> None:
     """Initialize services on bot startup."""
     logger.info("Starting News Digest Bot...")
-
-    # TODO: Initialize db connection and start scheduler
+    await init_db()
+    logger.info("Database connection initialized")
+    await start_scheduler(bot)
+    logger.info("Scheduler started")
 
 
 async def on_shutdown() -> None:
     """Cleanup on bot shutdown."""
     logger.info("Shutting down News Digest Bot...")
-
-    # TODO: Close db and gnews api connections and stop scheduler
+    await stop_scheduler()
+    logger.info("Scheduler stopped")
+    await news_api_service.close()
+    await close_db()
+    logger.info("All connections closed")
 
 
 async def main() -> None:
@@ -48,10 +59,16 @@ async def main() -> None:
     # Register routers
     dp.include_routers(
         start.router,
-        settings_handler.router
+        settings_handler.router,
+        digest_handler.router,
+        schedule_handler.router,
+        library_handler.router,
+        stats_handler.router,
     )
 
-    # TODO: Register startup/shutdown handlers
+    # Register startup/shutdown handlers
+    dp.startup.register(on_startup)
+    dp.shutdown.register(on_shutdown)
 
     # Start polling
     await dp.start_polling(bot)

@@ -6,14 +6,45 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.types import ReplyKeyboardRemove
 
+from database.connection import get_session
+from database.repositories.topic import TopicRepository
+from database.repositories.user import UserRepository
 from texts.start import SETTINGS
-from texts.settings import *
-
+from texts.settings import (
+    SETTINGS_MESSAGE,
+    ASK_CURRENT_STEP_TOPIC_MESSAGE,
+    MAXIMUM_REACHED_MESSAGE,
+    NEXT_TOPIC_MESSAGE,
+    PROCESS_TOPIC_MESSAGE,
+    CANCEL_SAVE_MESSAGE,
+    ENTER_TOPIC,
+    STOP_ENTERING,
+    FINISH_SAVE,
+    CLEAR_RESTART,
+    SAVE_TOPICS,
+    EDIT_TOPICS,
+    CANCEL,
+    MAX_TOPICS_REACHED_ERROR,
+    NO_TOPICS_TO_SAVE_ERROR,
+    PREVIEW_MESSAGE,
+    LOG_USER_TOPICS,
+)
+from texts.topics import (
+    TOPICS_SAVED_MESSAGE,
+    TOPICS_LOADED_MESSAGE,
+    TOPIC_TOO_SHORT_ERROR,
+    TOPIC_TOO_LONG_ERROR,
+    TOPIC_DUPLICATE_ERROR,
+    MAX_TOPICS_ERROR,
+    TOPICS_SAVE_ERROR,
+    TOPICS_LOAD_ERROR,
+    LOG_TOPICS_SAVED,
+    LOG_TOPICS_LOADED,
+)
 from keyboards import main_menu, settings
 from keyboards.settings import KEEP_TOPICS
 from utils.format_output import format_topics_list
 from states.waiting_for_topic_state import SettingsStates
-
 
 logger = logging.getLogger(__name__)
 router = Router()
@@ -28,9 +59,39 @@ async def cmd_settings(message: types.Message, state: FSMContext):
     """
     telegram_id = message.from_user.id
 
-    # TODO: Load existing topics from database
+    # Load existing topics from database
+    existing_topics = []
+    try:
+        async with get_session() as session:
+            topic_repo = TopicRepository(session)
+            db_topics = await topic_repo.list_by_telegram_id(telegram_id)
+            existing_topics = [t.name for t in db_topics]
+            logger.info(LOG_TOPICS_LOADED.format(
+                count=len(existing_topics),
+                telegram_id=telegram_id
+            ))
+    except Exception as e:
+        logger.error(f"Error loading topics for user {telegram_id}: {e}")
 
     # If user has existing topics, show them and offer to edit
+    if existing_topics:
+        topics_list = format_topics_list(existing_topics)
+        await message.answer(
+            text=TOPICS_LOADED_MESSAGE.format(
+                count=len(existing_topics),
+                topics_list=topics_list
+            ),
+            parse_mode="Markdown",
+            reply_markup=settings.get_edit_existing_keyboard()
+        )
+        # Store existing topics in state for potential editing
+        await state.update_data(
+            user_topics=existing_topics,
+            current_step=len(existing_topics) + 1,
+            max_topics=10,
+            has_existing_topics=True
+        )
+        return
 
     # No existing topics - start fresh
     await state.update_data(
@@ -59,7 +120,7 @@ async def start_topic_entry(message: types.Message, state: FSMContext):
     # Check limits
     if len(user_topics) >= 10:
         await message.answer(
-            text=MAX_TOPICS_REACHED_ERROR,
+            text=MAX_TOPICS_ERROR,
             reply_markup=settings.get_max_topics_keyboard()
         )
         return
@@ -85,7 +146,7 @@ async def process_topic_input(message: types.Message, state: FSMContext):
     # Validation: minimum length
     if len(topic) < 2:
         await message.answer(
-            text=MIN_TOPIC_LENGTH_ERROR,
+            text=TOPIC_TOO_SHORT_ERROR,
             reply_markup=ReplyKeyboardRemove()
         )
         return
@@ -93,7 +154,7 @@ async def process_topic_input(message: types.Message, state: FSMContext):
     # Validation: maximum length
     if len(topic) > 100:
         await message.answer(
-            text=MAX_TOPIC_LENGTH_ERROR,
+            text=TOPIC_TOO_LONG_ERROR,
             reply_markup=ReplyKeyboardRemove()
         )
         return
@@ -217,13 +278,42 @@ async def save_topics_final(message: types.Message, state: FSMContext):
         await state.clear()
         return
 
-    # TODO: Save topics to db
+    # Save to database
+    try:
+        async with get_session() as session:
+            # Get or create user first
+            user_repo = UserRepository(session)
+            db_user, _ = await user_repo.get_or_create(
+                telegram_id=telegram_id,
+                username=message.from_user.username,
+                first_name=message.from_user.first_name,
+                language_code=message.from_user.language_code or "ru",
+            )
+
+            # Replace all topics
+            topic_repo = TopicRepository(session)
+            await topic_repo.replace_all(db_user.id, user_topics)
+
+            logger.info(LOG_TOPICS_SAVED.format(
+                telegram_id=telegram_id,
+                count=len(user_topics),
+                topics=user_topics
+            ))
+
+    except Exception as e:
+        logger.error(f"Error saving topics for user {telegram_id}: {e}")
+        await message.answer(
+            text=TOPICS_SAVE_ERROR,
+            reply_markup=main_menu.get_main_keyboard()
+        )
+        await state.clear()
+        return
 
     # Format for display
     formatted_list = "\n".join([f"• {t}" for t in user_topics])
 
     await message.answer(
-        text=SUCCESS_SAVE_MESSAGE.format(
+        text=TOPICS_SAVED_MESSAGE.format(
             formatted_list=formatted_list
         ),
         parse_mode="Markdown",
@@ -273,4 +363,3 @@ async def keep_current_topics(message: types.Message, state: FSMContext):
         reply_markup=main_menu.get_main_keyboard()
     )
     await state.clear()
-

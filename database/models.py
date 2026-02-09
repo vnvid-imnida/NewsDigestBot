@@ -13,7 +13,7 @@ from sqlalchemy import (
     String,
     Text,
     UniqueConstraint,
-    func
+    func,
 )
 from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
@@ -21,11 +21,13 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 class Base(DeclarativeBase):
     """Base class for all models."""
+
     pass
 
 
 class User(Base):
     """Telegram bot user."""
+
     __tablename__ = "users"
 
     id: Mapped[uuid.UUID] = mapped_column(
@@ -34,12 +36,8 @@ class User(Base):
     telegram_id: Mapped[int] = mapped_column(
         BigInteger, unique=True, nullable=False, index=True
     )
-    username: Mapped[Optional[str]] = mapped_column(
-        String(255), nullable=True
-    )
-    first_name: Mapped[Optional[str]] = mapped_column(
-        String(255), nullable=True
-    )
+    username: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    first_name: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
     language_code: Mapped[str] = mapped_column(
         String(10), nullable=False, default="ru"
     )
@@ -50,7 +48,7 @@ class User(Base):
         DateTime(timezone=True),
         nullable=False,
         server_default=func.now(),
-        onupdate=func.now()
+        onupdate=func.now(),
     )
 
     # Relationships
@@ -67,6 +65,7 @@ class User(Base):
 
 class Topic(Base):
     """User's topic of interest for news."""
+
     __tablename__ = "topics"
 
     id: Mapped[uuid.UUID] = mapped_column(
@@ -75,17 +74,13 @@ class Topic(Base):
     user_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False
     )
-    name: Mapped[str] = mapped_column(
-        String(100), nullable=False
-    )
+    name: Mapped[str] = mapped_column(String(100), nullable=False)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), nullable=False, server_default=func.now()
     )
 
     # Relationships
-    user: Mapped["User"] = relationship(
-        "User", back_populates="topics"
-    )
+    user: Mapped["User"] = relationship("User", back_populates="topics")
 
     __table_args__ = (
         UniqueConstraint("user_id", "name", name="topics_user_id_name_unique"),
@@ -94,7 +89,8 @@ class Topic(Base):
 
 
 class Schedule(Base):
-    """User's schedule for automatic digest delivery"""
+    """User's schedule for automatic digest delivery."""
+
     __tablename__ = "schedules"
 
     id: Mapped[uuid.UUID] = mapped_column(
@@ -104,19 +100,17 @@ class Schedule(Base):
         UUID(as_uuid=True),
         ForeignKey("users.id", ondelete="CASCADE"),
         unique=True,
-        nullable=False
+        nullable=False,
     )
-    is_active: Mapped[bool] = mapped_column(
-        Boolean, nullable=False, default=False
-    )
+    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
     times: Mapped[list] = mapped_column(
         JSONB, nullable=False, default=list
-    )
+    )  # ["08:00", "18:00"]
     timezone: Mapped[str] = mapped_column(
         String(50), nullable=False, default="Europe/Moscow"
     )
-    last_sent_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), nullable=False
+    last_sent_at: Mapped[Optional[datetime]] = mapped_column(
+        DateTime(timezone=True), nullable=True
     )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), nullable=False, server_default=func.now()
@@ -125,17 +119,16 @@ class Schedule(Base):
         DateTime(timezone=True),
         nullable=False,
         server_default=func.now(),
-        onupdate=func.now()
+        onupdate=func.now(),
     )
 
     # Relationships
-    user: Mapped["User"] = relationship(
-        "User", back_populates="schedule"
-    )
+    user: Mapped["User"] = relationship("User", back_populates="schedule")
 
 
 class Article(Base):
     """News article from external API (GNews)."""
+
     __tablename__ = "articles"
 
     id: Mapped[uuid.UUID] = mapped_column(
@@ -144,21 +137,11 @@ class Article(Base):
     external_id: Mapped[str] = mapped_column(
         String(255), unique=True, nullable=False, index=True
     )
-    title: Mapped[str] = mapped_column(
-        String(500), nullable=False
-    )
-    description: Mapped[Optional[str]] = mapped_column(
-        Text, nullable=True
-    )
-    url: Mapped[str] = mapped_column(
-        String(2000), nullable=False
-    )
-    source_name: Mapped[Optional[str]] = mapped_column(
-        String(255), nullable=True
-    )
-    image_url: Mapped[Optional[str]] = mapped_column(
-        String(2000), nullable=True
-    )
+    title: Mapped[str] = mapped_column(String(500), nullable=False)
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    url: Mapped[str] = mapped_column(String(2000), nullable=False)
+    source_name: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    image_url: Mapped[Optional[str]] = mapped_column(String(2000), nullable=True)
     published_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), nullable=False, index=True
     )
@@ -176,28 +159,27 @@ class Article(Base):
 
 class SavedArticle(Base):
     """Article saved by user to their library."""
+
     __tablename__ = "saved_articles"
 
     id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
     )
-    article_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("articles.id", ondelete="CASCADE"), nullable=False
-    )
     user_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE", nullable=False)
+        UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False
+    )
+    article_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("articles.id", ondelete="CASCADE"),
+        nullable=False,
     )
     saved_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), nullable=False, server_default=func.now()
     )
 
     # Relationships
-    article: Mapped["Article"] = relationship(
-        "Article", back_populates="saved_by"
-    )
-    user: Mapped["User"] = relationship(
-        "User", back_populates="saved_articles"
-    )
+    user: Mapped["User"] = relationship("User", back_populates="saved_articles")
+    article: Mapped["Article"] = relationship("Article", back_populates="saved_by")
 
     __table_args__ = (
         UniqueConstraint(

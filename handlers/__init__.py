@@ -41,7 +41,11 @@ class ErrorHandlingMiddleware(BaseMiddleware):
 
 
 __all__ = [
-    "ErrorHandlingMiddleware",
     "start",
-    "settings"
+    "settings",
+    "digest",
+    "schedule",
+    "library",
+    "stats",
+    "ErrorHandlingMiddleware",
 ]

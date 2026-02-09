@@ -1,3 +1,5 @@
-__all__ = []
+"""Configuration module for News Digest Bot."""
 
-from . import *
+from config.settings import settings
+
+__all__ = ["settings"]

@@ -1,73 +1,90 @@
 WELCOME_MESSAGE = """
-🌟 *Добро пожаловать в NewsDigestBot!* 🌟
+🌟 *Welcome to NewsDigestBot!* 🌟
 
-Твой умный помощник для чтения новостей, который избавит от информационного шума.
+Your intelligent news companion designed to simplify how you consume information.
 
-🎯 *Что я умею?*
-• 🤖 **Умная фильтрация** – Новости, интересные ИМЕННО ТЕБЕ
-• 📚 **Личная библиотека** – Сохраняй статьи с тегами и заметками
-• ⏰ **Ежедневные дайджесты** – Подборки в удобное время
-• 🔔 **Мгновенные оповещения** – Важные новости без задержек
-• 📊 **Анализ трендов** – Следи за популярными темами
+🔍 *What makes me special?*
+• 🤖 **Smart Filtering** – Get only news relevant to YOUR interests
+• 📚 **Personal Library** – Save articles with tags & notes
+• ⏰ **Daily Digests** – Curated summaries delivered automatically
+• 🔔 **Real-time Updates** – Instant notifications for breaking news
+• 📊 **Trend Analysis** – See what topics are trending in your areas
 
-🚀 *Начни за 30 секунд:*
-1️⃣ */settings* – Выбери темы (AI, Технологии, Наука и др.)
-2️⃣ */digest* – Получи первую персональную подборку
-3️⃣ Жми *«Сохранить»* под интересными статьями
-4️⃣ Используй */library* чтобы перечитать сохранённое
+🎯 *Perfect For:*
+• Students & Researchers
+• Professionals staying updated
+• News enthusiasts avoiding information overload
+• Anyone wanting organized knowledge management
 
-⚙️ *Настрой под себя:*
-• Выбери время отправки дайджестов
-• Настрой частоту (ежедневно/еженедельно)
-• Включи/выключи уведомления
-• Экспортируй библиотеку в PDF
+🚀 *Quick Start Guide:*
+1️⃣ */settings* – Choose your topics (AI, Tech, Science, etc.)
+2️⃣ */digest* – Get your first personalized news digest
+3️⃣ Click *"Save"* under interesting articles
+4️⃣ Use */library* to browse saved articles anytime
 
-💡 *Лайфхак:* Используй хештеги при сохранении (#python #ai #исследование) – так будет проще искать!
+⚙️ *Customization Options:*
+• Set preferred delivery times
+• Choose digest frequency (daily/weekly)
+• Enable/disable notifications
+• Export your library as PDF
 
-Приятного чтения! 📚✨
+📈 *Stats & Insights:*
+Track which topics you read most, time spent reading, and knowledge growth over time.
+
+💡 *Pro Tip:* Use hashtags when saving articles (#python #ai #research) for better organization!
+
+❓ Need help? Use /help or contact support.
+
+Happy reading! 📚✨
 """
 
 HELP_MESSAGE = """
-📖 *Доступные команды:*
+📖 *Available Commands:*
 
-📋 *Основное:*
-/start – Приветствие и возможности бота
-/digest – Персональный дайджест новостей
-/settings – Настройки тем и предпочтений
-/library – Твоя библиотека статей
-/search – Поиск по библиотеке
-/save – Сохранить текущую статью
+📋 *Core Features:*
+/start – Welcome message & bot overview
+/digest – Get personalized news digest
+/settings – Configure topics & preferences
+/library – Your saved articles library
+/search – Search in your library
+/save – Save current article
 
-⚙️ *Управление:*
-/profile – Статистика и настройки
-/export – Экспорт библиотеки (PDF/TXT)
-/notifications – Управление уведомлениями
-/feedback – Предложения и пожелания
+⚙️ *Management:*
+/profile – View your stats & settings
+/export – Export library as PDF/TXT
+/notifications – Manage alerts
+/feedback – Send suggestions
 
-🆘 *Помощь:*
-/help – Это сообщение
-/contact – Связаться с поддержкой
-/tutorial – Пошаговое руководство
+🆘 *Support:*
+/help – This help message
+/contact – Contact support
+/tutorial – Step-by-step guide
 
-📚 *Как использовать эффективно:*
-1. Будь конкретнее в /settings
-2. Добавляй теги: #обучение, #новости, #исследование
-3. Настрой время дайджеста под свой график
-4. Регулярно чисти библиотеку (/library → Удалить старое)
+📚 *How to Maximize Use:*
+1. Be specific in /settings
+2. Use tags when saving: #tutorial, #news, #research
+3. Set digest time matching your schedule
+4. Regularly clean library with /library → Delete old
 
-📧 Поддержка: @your\_username | Email: support@newsdigest.com
+🔗 *Quick Links:*
+• [GitHub Repository](https://github.com/your-repo)
+• [Privacy Policy](https://your-privacy-link)
+• [Feature Requests](https://your-feedback-link)
+
+📧 Support: @your\_username | Email: support@newsdigest.com
 """
 
-ENTER_SETTINGS_MESSAGE = '🎯 *Всё готово!* Используй /settings чтобы выбрать свои интересы!'
+ENTER_SETTINGS_MESSAGE = '🎯 *Ready to start?* Use /settings to configure your interests first!'
 
 # Button text
-GET_DIGEST = "📰 Дайджест"
-SETTINGS = "⚙️ Настройки"
-HELP = "❓ Помощь"
-MY_LIBRARY = "💾 Библиотека"
-STATS = "📊 Статистика"
-TUTORIAL = "🌟 Туториал"
+GET_DIGEST = '📰 Get Digest'
+SETTINGS = '⚙️ Settings'
+SCHEDULE = '⏰ Schedule'
+HELP = '❓ Help'
+MY_LIBRARY = '💾 My Library'
+STATS = '📊 Stats'
+TUTORIAL = '🌟 Tutorial'
 
 # Log
-LOG_START_MESSAGE = "New user: ID={user_id}, Username=@{username}, Name={user_full_name}"
-LOG_HELP_MESSAGE = "Help requested by user {username}"
+LOG_START_MESSAGE = 'New user: ID={user_id}, Username=@{username}, Name={user_full_name}'
+LOG_HELP_MESSAGE = 'Help requested by user {username}'

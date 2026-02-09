@@ -1,83 +1,52 @@
-SETTINGS_MESSAGE = """🔧 *Настройка тем: шаг за шагом*
+SETTINGS_MESSAGE = """
+🔧 *Step-by-Step Topics Setup*\n
+You can add up to 10 topics.
+━━━━━━━━━━━━━━━━━━━━\n
+📌 *How it works:*
+1. Press 'Enter Topic X'
+2. Type your interest
+3. Topic saved → next topic
+4. Repeat or press 'Stop'\n
+👉 *Press button to add first topic:*
+"""
 
-Можно добавить до 10 тем.
-━━━━━━━━━━━━━━━━━━━━
-
-📌 *Как это работает:*
-1. Нажми «Добавить тему X»
-2. Введи интересующую тебя тему
-3. Тема сохранена → следующая тема
-4. Введи следующую или нажми «Остановить»
-
-👉 *Нажми кнопку для добавления первой темы:*"""
-
-ASK_CURRENT_STEP_TOPIC_MESSAGE = (
-    "📝 *Тема {current_step} из 10*\n\n"
-    "Введи интересующую тебя тему:\n\n"
-    "(Будь конкретнее — так подборка будет точнее)"
-)
-
-MAXIMUM_REACHED_MESSAGE = "🎉 *Лимит достигнут!* Нельзя добавить больше 10 тем."
-
-NEXT_TOPIC_MESSAGE = "*Что дальше?*"
-
-PROCESS_TOPIC_MESSAGE = (
-    "✅ *Тема {topics_count} добавлена:* {topic}\n\n"
-    "📋 *Твои темы ({topics_count}/10):*\n"
-    "{topics_list}\n\n"
-    "{status_text}"
-)
-
-SUCCESS_SAVE_MESSAGE = (
-    "✅ *Темы успешно сохранены!*\n\n"
-    "*Твои интересы:*\n"
-    "{formatted_list}\n\n"
-    "Теперь используй /digest для получения новостей!\n"
-    "Изменить можно в любой момент через /settings"
-)
-
-CANCEL_SAVE_MESSAGE = "Темы не сохранены. Используй /settings для нового выбора."
-
+ASK_CURRENT_STEP_TOPIC_MESSAGE = (('📝 *Topic {current_step} out of 10*\n\n' +
+                                  'Please type your interest:\n') +
+                                  '(Be specific for better results)')
+MAXIMUM_REACHED_MESSAGE = '🎉 *Maximum reached!* No more topics can be added.'
+NEXT_TOPIC_MESSAGE = '*What\'s next?*'
+PROCESS_TOPIC_MESSAGE = ('✅ *Topic {topics_count} added:* {topic}\n\n' +
+                         '📋 *Your topics ({topics_count}/10):*\n' +
+                         '{topics_list}\n\n' +
+                         '{status_text}')
+SUCCESS_SAVE_MESSAGE = ('✅ *Topics Saved Successfully!*\n\n' +
+                        '*Your interests:*\n' +
+                        '{formatted_list}\n\n' +
+                        'Now use /digest to get news!\n' +
+                        'Change anytime with /settings')
+CANCEL_SAVE_MESSAGE = 'Topics not saved. Use /settings to start over.'
 
 # Buttons text
-ENTER_TOPIC = "📝 Добавить тему"
-STOP_ENTERING = "🚫 Остановить"
-FINISH_SAVE = "✅ Завершить и сохранить"
-CLEAR_RESTART = "🗑️ Очистить всё и начать заново"
-SAVE_TOPICS = "💾 Сохранить темы"
-EDIT_TOPICS = "✏️ Изменить темы"
-CANCEL = "❌ Отмена"
-
+ENTER_TOPIC = '📝 Enter Topic'
+STOP_ENTERING = '🚫 Stop Entering'
+FINISH_SAVE = '✅ Finish & Save'
+CLEAR_RESTART = '🗑️ Clear All & Restart'
+SAVE_TOPICS = '💾 Save These Topics'
+EDIT_TOPICS = '✏️ Edit Topics'
+CANCEL = '❌ Cancel'
 
 # Error handling
-MAX_TOPICS_REACHED_ERROR = (
-    "❌ Достигнут максимум — 10 тем!\n\n"
-    "Больше добавить нельзя."
-)
-
-MIN_TOPIC_LENGTH_ERROR = (
-    "❌ Слишком коротко. Минимум 2 символа.\n\n"
-    "Попробуй ещё раз:"
-)
-
-MAX_TOPIC_LENGTH_ERROR = (
-    "❌ Слишком длинно. Максимум 100 символов.\n\n"
-    "Попробуй ещё раз:"
-)
-
-TOPIC_DUPLICATE_ERROR = (
-    "❌ Эта тема уже добавлена.\n"
-    "Введите другую тему:"
-)
-
-NO_TOPICS_TO_SAVE_ERROR = "Нет тем для сохранения. Используй /settings для начала ввода."
-
-PREVIEW_MESSAGE = (
-    "📋 *Финальный просмотр*\n\n"
-    "*Твои темы ({topics_number}/10):*\n"
-    "{topics_list}\n\n"
-    "*Сохранить эти темы?*"
-)
+MAX_TOPICS_REACHED_ERROR = ('❌ Maximum 10 topics reached!\n' +
+                            'You cannot add more topics.')
+MIN_TOPIC_LENGTH_ERROR = ('❌ Topic too short. Please enter at least 2 characters.\n' +
+                          'Try again:')
+MAX_TOPIC_LENGTH_ERROR = ('❌ Topic too long. Maximum 100 characters.\n' +
+                          'Try again:')
+NO_TOPICS_TO_SAVE_ERROR = 'No topics to save. Use /settings to start over.'
+PREVIEW_MESSAGE = ('📋 *Final Preview*\n\n' +
+                   '*Your topics ({topics_number}/10):*\n' +
+                   '{topics_list}\n\n' +
+                   '*Save these topics?*')
 
 # Log
 LOG_USER_TOPICS = 'User {username} saved topics: {user_topics}'
