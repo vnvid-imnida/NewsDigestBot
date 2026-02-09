@@ -1,0 +1,41 @@
+%% C4 Container Diagram - News Digest Bot
+%% Shows internal containers and their interactions
+
+graph TB
+    User[("👤 User<br/>(Telegram Client)")]
+
+    subgraph SystemBoundary["News Digest Bot System"]
+        BotApp["📱 Bot Application<br/>[Container: Python 3.11]<br/>Technology: aiogram 3.24,<br/>SQLAlchemy 2.0, asyncpg<br/>Handles user commands,<br/>business logic, FSM states"]
+
+        Scheduler["⏰ APScheduler<br/>[Container: Background Jobs]<br/>Technology: APScheduler 3.x<br/>Manages scheduled digest<br/>delivery to users"]
+
+        Database["🗄️ PostgreSQL Database<br/>[Container: PostgreSQL 15]<br/>Stores: users, topics,<br/>schedules, articles,<br/>saved_articles"]
+    end
+
+    TelegramAPI["🌐 Telegram Bot API<br/>[External System]"]
+    GNewsAPI["📰 GNews API<br/>[External System]"]
+
+    %% Relationships
+    User -->|"1. Sends commands<br/>(HTTPS, Bot API)"| TelegramAPI
+    TelegramAPI -->|"2. Long polling<br/>(HTTPS, JSON)"| BotApp
+    BotApp -->|"3. Responses<br/>(HTTPS, sendMessage)"| TelegramAPI
+    TelegramAPI -->|"4. Delivers messages"| User
+
+    BotApp -->|"Fetches news<br/>(HTTPS, REST API)"| GNewsAPI
+    BotApp -->|"CRUD operations<br/>(SQL, port 5432)"| Database
+
+    Scheduler -.->|"Triggers scheduled jobs<br/>(in-process calls)"| BotApp
+    Scheduler -->|"Queries schedules<br/>(SQL SELECT)"| Database
+
+    BotApp -->|"Creates/updates jobs<br/>(Python API)"| Scheduler
+
+    %% Styling
+    classDef container fill:#457b9d,stroke:#1d3557,stroke-width:2px,color:#fff
+    classDef external fill:#a8dadc,stroke:#457b9d,stroke-width:2px
+    classDef database fill:#2a9d8f,stroke:#264653,stroke-width:2px,color:#fff
+    classDef person fill:#f1faee,stroke:#457b9d,stroke-width:2px
+
+    class User person
+    class BotApp,Scheduler container
+    class Database database
+    class TelegramAPI,GNewsAPI external

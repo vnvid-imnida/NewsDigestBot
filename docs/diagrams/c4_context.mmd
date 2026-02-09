@@ -1,0 +1,33 @@
+%% C4 Context Diagram - News Digest Bot
+%% Shows high-level system interactions with external actors and systems
+
+graph TB
+    User[("👤 User<br/>(Telegram)")]
+
+    subgraph SystemBoundary["News Digest Bot System"]
+        Bot["📱 News Digest Bot<br/>[Software System]<br/>Provides personalized news digests<br/>via Telegram interface"]
+    end
+
+    TelegramAPI["🌐 Telegram Bot API<br/>[External System]<br/>Handles message delivery<br/>and user interactions"]
+
+    GNewsAPI["📰 GNews API<br/>[External System]<br/>Provides news articles<br/>from various sources"]
+
+    PostgreSQL["🗄️ PostgreSQL<br/>[Database System]<br/>Stores users, topics,<br/>schedules, and articles"]
+
+    %% Relationships
+    User -->|"Sends commands<br/>(HTTP/HTTPS)"| TelegramAPI
+    TelegramAPI -->|"Forwards messages<br/>(Long Polling)"| Bot
+    Bot -->|"Sends responses<br/>(Telegram Bot API)"| TelegramAPI
+    TelegramAPI -->|"Delivers messages"| User
+
+    Bot -->|"Fetches news<br/>(REST API, JSON)"| GNewsAPI
+    Bot -->|"Reads/Writes data<br/>(SQL, asyncpg)"| PostgreSQL
+
+    %% Styling
+    classDef external fill:#a8dadc,stroke:#457b9d,stroke-width:2px
+    classDef system fill:#e63946,stroke:#d00000,stroke-width:3px
+    classDef person fill:#f1faee,stroke:#457b9d,stroke-width:2px
+
+    class User person
+    class Bot system
+    class TelegramAPI,GNewsAPI,PostgreSQL external

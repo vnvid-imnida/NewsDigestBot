@@ -1,0 +1,69 @@
+# =============================================================================
+# News Digest Bot - Docker Compose Configuration
+# =============================================================================
+# Usage:
+#   docker-compose up -d      # Start all services
+#   docker-compose down       # Stop (preserve data)
+#   docker-compose down -v    # Stop and delete data
+#   docker-compose logs -f    # View logs
+# =============================================================================
+
+version: "3.8"
+
+services:
+  # ---------------------------------------------------------------------------
+  # Bot Application
+  # ---------------------------------------------------------------------------
+  newsbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: newsbot
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      - TZ=Europe/Moscow
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    networks:
+      - newsbot_network
+
+  # ---------------------------------------------------------------------------
+  # PostgreSQL Database
+  # ---------------------------------------------------------------------------
+  db:
+    image: postgres:15-alpine
+    container_name: newsbot_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:-newsbot}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - newsbot_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+# -----------------------------------------------------------------------------
+# Volumes
+# -----------------------------------------------------------------------------
+volumes:
+  postgres_data:
+    driver: local
+
+# -----------------------------------------------------------------------------
+# Networks
+# -----------------------------------------------------------------------------
+networks:
+  newsbot_network:
+    driver: bridge

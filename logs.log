@@ -1,0 +1,1487 @@
+
+2026-01-15 16:00:45,135 INFO Start polling
+2026-01-15 16:00:45,570 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:00:58,552 INFO Polling stopped
+2026-01-15 16:00:58,553 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:00:58,553 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:00:58,808 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:01:27,542 INFO Start polling
+2026-01-15 16:01:27,971 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:02:10,421 INFO Polling stopped
+2026-01-15 16:02:10,425 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:02:10,426 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:02:10,679 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:02:26,342 INFO Start polling
+2026-01-15 16:02:31,790 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:02:36,497 INFO Update id=6939218 is handled. Duration 703 ms by bot id=8584519010
+2026-01-15 16:04:02,408 INFO Polling stopped
+2026-01-15 16:04:02,409 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:04:02,409 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:04:02,662 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:13:52,897 INFO Start polling
+2026-01-15 16:13:54,805 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:14:09,464 INFO Update id=6939219 is handled. Duration 484 ms by bot id=8584519010
+2026-01-15 16:16:19,307 INFO Polling stopped
+2026-01-15 16:16:19,308 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:16:19,308 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:16:19,566 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:17:37,205 INFO Start polling
+2026-01-15 16:17:37,643 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:17:43,739 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:17:43,739 INFO Update id=6939220 is handled. Duration 531 ms by bot id=8584519010
+2026-01-15 16:18:23,187 INFO Update id=6939221 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 16:18:29,870 INFO Polling stopped
+2026-01-15 16:18:29,872 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:18:29,872 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:18:30,134 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:18:30,136 INFO Bot stopped by user
+2026-01-15 16:23:48,539 INFO Start polling
+2026-01-15 16:23:50,583 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:23:51,363 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:23:51,363 INFO Update id=6939222 is handled. Duration 483 ms by bot id=8584519010
+2026-01-15 16:24:08,872 INFO Update id=6939223 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 16:24:14,363 INFO Update id=6939224 is not handled. Duration 94 ms by bot id=8584519010
+2026-01-15 16:24:14,363 ERROR Cause exception while process update id=6939224 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 45, in help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:24:51,170 INFO Polling stopped
+2026-01-15 16:24:51,171 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:24:51,171 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:24:51,429 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:24:51,430 INFO Bot stopped by user
+2026-01-15 16:27:15,577 INFO Start polling
+2026-01-15 16:27:16,296 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:27:21,330 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:27:21,330 INFO Update id=6939225 is handled. Duration 1187 ms by bot id=8584519010
+2026-01-15 16:27:26,984 INFO Update id=6939226 is not handled. Duration 92 ms by bot id=8584519010
+2026-01-15 16:27:26,985 ERROR Cause exception while process update id=6939226 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 45, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:28:04,005 INFO Update id=6939227 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 16:28:52,286 INFO Polling stopped
+2026-01-15 16:28:52,287 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:28:52,287 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:28:52,544 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:28:52,545 INFO Bot stopped by user
+2026-01-15 16:30:13,222 INFO Start polling
+2026-01-15 16:30:13,882 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:30:24,416 INFO Update id=6939228 is not handled. Duration 358 ms by bot id=8584519010
+2026-01-15 16:30:24,416 ERROR Cause exception while process update id=6939228 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:31:03,132 INFO Polling stopped
+2026-01-15 16:31:03,133 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:31:03,133 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:31:03,398 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:31:03,399 INFO Bot stopped by user
+2026-01-15 16:31:06,659 INFO Start polling
+2026-01-15 16:31:07,226 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:31:08,123 INFO Update id=6939229 is not handled. Duration 344 ms by bot id=8584519010
+2026-01-15 16:31:08,123 ERROR Cause exception while process update id=6939229 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:31:23,668 INFO Polling stopped
+2026-01-15 16:31:23,670 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:31:23,670 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:31:23,923 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:31:23,924 INFO Bot stopped by user
+2026-01-15 16:31:26,948 INFO Start polling
+2026-01-15 16:31:27,346 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:31:52,061 INFO Polling stopped
+2026-01-15 16:31:52,062 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:31:52,062 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:31:52,314 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:31:52,315 INFO Bot stopped by user
+2026-01-15 16:32:12,014 INFO Start polling
+2026-01-15 16:32:12,466 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:32:20,822 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:32:20,822 INFO Update id=6939230 is handled. Duration 5797 ms by bot id=8584519010
+2026-01-15 16:32:28,052 INFO Update id=6939231 is not handled. Duration 94 ms by bot id=8584519010
+2026-01-15 16:32:28,052 ERROR Cause exception while process update id=6939231 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:35:59,436 INFO Polling stopped
+2026-01-15 16:35:59,437 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:35:59,437 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:35:59,693 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:35:59,695 INFO Bot stopped by user
+2026-01-15 16:36:14,420 INFO Start polling
+2026-01-15 16:36:14,821 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:36:25,630 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:36:25,631 INFO Update id=6939232 is handled. Duration 547 ms by bot id=8584519010
+2026-01-15 16:36:27,675 INFO Update id=6939233 is not handled. Duration 94 ms by bot id=8584519010
+2026-01-15 16:36:27,675 ERROR Cause exception while process update id=6939233 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:36:39,837 INFO Polling stopped
+2026-01-15 16:36:39,838 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:36:39,839 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:36:40,090 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:36:40,091 INFO Bot stopped by user
+2026-01-15 16:36:42,033 INFO Start polling
+2026-01-15 16:36:42,373 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:36:42,781 INFO Update id=6939234 is not handled. Duration 327 ms by bot id=8584519010
+2026-01-15 16:36:42,781 ERROR Cause exception while process update id=6939234 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:37:07,728 INFO Polling stopped
+2026-01-15 16:37:07,728 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:37:07,729 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:37:07,992 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:37:07,993 INFO Bot stopped by user
+2026-01-15 16:37:47,807 INFO Start polling
+2026-01-15 16:37:48,277 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:37:50,111 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:37:50,111 INFO Update id=6939235 is handled. Duration 671 ms by bot id=8584519010
+2026-01-15 16:37:52,169 INFO Help requested by user 1408059701
+2026-01-15 16:37:52,169 INFO Update id=6939236 is handled. Duration 141 ms by bot id=8584519010
+2026-01-15 16:40:39,582 INFO Polling stopped
+2026-01-15 16:40:39,583 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:40:39,583 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:40:39,837 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:40:39,839 INFO Bot stopped by user
+2026-01-15 16:40:43,536 INFO Start polling
+2026-01-15 16:40:43,896 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:40:52,586 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:40:52,586 INFO Update id=6939237 is handled. Duration 562 ms by bot id=8584519010
+2026-01-15 16:40:54,292 INFO Update id=6939238 is not handled. Duration 108 ms by bot id=8584519010
+2026-01-15 16:40:54,292 ERROR Cause exception while process update id=6939238 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:40:59,211 INFO Polling stopped
+2026-01-15 16:40:59,213 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:40:59,213 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:40:59,476 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:40:59,478 INFO Bot stopped by user
+2026-01-15 16:47:00,615 INFO Start polling
+2026-01-15 16:47:04,895 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:47:12,546 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:47:12,546 INFO Update id=6939239 is handled. Duration 796 ms by bot id=8584519010
+2026-01-15 16:47:15,034 INFO Update id=6939240 is not handled. Duration 171 ms by bot id=8584519010
+2026-01-15 16:47:15,034 ERROR Cause exception while process update id=6939240 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:47:21,788 INFO Polling stopped
+2026-01-15 16:47:21,789 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:47:21,789 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:47:22,041 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:47:22,042 INFO Bot stopped by user
+2026-01-15 16:50:10,232 INFO Start polling
+2026-01-15 16:50:15,361 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:50:15,808 INFO Update id=6939241 is not handled. Duration 344 ms by bot id=8584519010
+2026-01-15 16:50:15,808 ERROR Cause exception while process update id=6939241 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:50:20,265 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:50:20,265 INFO Update id=6939242 is handled. Duration 266 ms by bot id=8584519010
+2026-01-15 16:50:21,925 INFO Update id=6939243 is not handled. Duration 94 ms by bot id=8584519010
+2026-01-15 16:50:21,925 ERROR Cause exception while process update id=6939243 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1009
+2026-01-15 16:50:28,743 INFO Polling stopped
+2026-01-15 16:50:28,744 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:50:28,744 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:50:28,999 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:50:29,000 INFO Bot stopped by user
+2026-01-15 16:51:40,194 INFO Start polling
+2026-01-15 16:51:40,641 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:51:41,242 INFO Help requested by user 1408059701
+2026-01-15 16:51:41,242 INFO Update id=6939244 is handled. Duration 516 ms by bot id=8584519010
+2026-01-15 16:52:13,851 INFO Polling stopped
+2026-01-15 16:52:13,853 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:52:13,853 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:52:14,114 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:52:14,115 INFO Bot stopped by user
+2026-01-15 16:53:02,442 INFO Start polling
+2026-01-15 16:53:02,811 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:53:03,243 INFO Update id=6939245 is not handled. Duration 344 ms by bot id=8584519010
+2026-01-15 16:53:03,244 ERROR Cause exception while process update id=6939245 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 959
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 959
+2026-01-15 16:53:03,315 INFO Update id=6939246 is not handled. Duration 422 ms by bot id=8584519010
+2026-01-15 16:53:03,316 ERROR Cause exception while process update id=6939246 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 959
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 959
+2026-01-15 16:53:10,630 INFO Polling stopped
+2026-01-15 16:53:10,631 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:53:10,631 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:53:10,886 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:53:10,887 INFO Bot stopped by user
+2026-01-15 16:54:29,983 INFO Start polling
+2026-01-15 16:54:30,332 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:54:31,343 INFO Update id=6939247 is not handled. Duration 359 ms by bot id=8584519010
+2026-01-15 16:54:31,343 ERROR Cause exception while process update id=6939247 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 959
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 959
+2026-01-15 16:54:43,261 INFO Polling stopped
+2026-01-15 16:54:43,262 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:54:43,262 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:54:43,516 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:54:43,518 INFO Bot stopped by user
+2026-01-15 16:54:46,550 INFO Start polling
+2026-01-15 16:54:47,223 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:54:47,683 INFO Update id=6939248 is not handled. Duration 375 ms by bot id=8584519010
+2026-01-15 16:54:47,683 ERROR Cause exception while process update id=6939248 by bot id=8584519010
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 958
+Traceback (most recent call last):
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\handlers\start.py", line 46, in cmd_help
+    await message.answer(
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 484, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Public\Documents\Диана\СПбПУ\5 семестр\NewsDigestBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 958
+2026-01-15 16:54:51,703 INFO Polling stopped
+2026-01-15 16:54:51,704 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:54:51,704 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:54:51,957 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:54:51,958 INFO Bot stopped by user
+2026-01-15 16:55:07,268 INFO Start polling
+2026-01-15 16:55:07,641 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:55:08,140 INFO Help requested by user 1408059701
+2026-01-15 16:55:08,140 INFO Update id=6939249 is handled. Duration 391 ms by bot id=8584519010
+2026-01-15 16:55:16,043 INFO Polling stopped
+2026-01-15 16:55:16,044 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:55:16,044 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:55:16,302 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:55:16,303 INFO Bot stopped by user
+2026-01-15 16:55:26,581 INFO Start polling
+2026-01-15 16:55:27,041 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:55:32,798 INFO Help requested by user 1408059701
+2026-01-15 16:55:32,798 INFO Update id=6939250 is handled. Duration 2812 ms by bot id=8584519010
+2026-01-15 16:55:36,685 INFO Polling stopped
+2026-01-15 16:55:36,686 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:55:36,686 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:55:36,945 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:55:36,946 INFO Bot stopped by user
+2026-01-15 16:56:58,331 INFO Start polling
+2026-01-15 16:56:58,710 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:56:59,917 INFO Help requested by user 1408059701
+2026-01-15 16:56:59,918 INFO Update id=6939251 is handled. Duration 391 ms by bot id=8584519010
+2026-01-15 16:57:05,737 INFO Polling stopped
+2026-01-15 16:57:05,738 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:57:05,738 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:57:05,999 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:57:06,001 INFO Bot stopped by user
+2026-01-15 16:57:11,606 INFO Start polling
+2026-01-15 16:57:17,309 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:57:35,378 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 16:57:35,378 INFO Update id=6939252 is handled. Duration 578 ms by bot id=8584519010
+2026-01-15 16:58:13,315 INFO Update id=6939253 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 16:58:21,058 INFO Polling stopped
+2026-01-15 16:58:21,059 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 16:58:21,059 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 16:58:21,319 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 16:58:21,320 INFO Bot stopped by user
+2026-01-15 17:05:48,215 INFO Start polling
+2026-01-15 17:05:48,669 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:05:49,321 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 17:05:49,321 INFO Update id=6939254 is handled. Duration 578 ms by bot id=8584519010
+2026-01-15 17:06:01,225 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 17:06:01,225 INFO Update id=6939255 is handled. Duration 328 ms by bot id=8584519010
+2026-01-15 17:06:41,213 INFO Polling stopped
+2026-01-15 17:06:41,214 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 17:06:41,214 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 17:06:41,472 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:06:41,472 INFO Bot stopped by user
+2026-01-15 17:08:05,727 INFO Start polling
+2026-01-15 17:08:06,114 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:08:06,681 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 17:08:06,681 INFO Update id=6939256 is handled. Duration 484 ms by bot id=8584519010
+2026-01-15 17:08:11,981 INFO Update id=6939257 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 17:08:19,845 INFO Polling stopped
+2026-01-15 17:08:19,846 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 17:08:19,846 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 17:08:20,107 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:08:20,108 INFO Bot stopped by user
+2026-01-15 17:31:55,001 INFO Start polling
+2026-01-15 17:31:55,444 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:32:07,533 INFO Update id=6939258 is not handled. Duration 16 ms by bot id=8584519010
+2026-01-15 17:32:26,370 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 17:32:26,371 INFO Update id=6939259 is handled. Duration 469 ms by bot id=8584519010
+2026-01-15 17:32:28,471 INFO Update id=6939260 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 17:32:30,538 INFO Update id=6939261 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 17:32:35,941 INFO Polling stopped
+2026-01-15 17:32:35,942 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 17:32:35,942 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 17:32:36,200 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:32:36,201 INFO Bot stopped by user
+2026-01-15 17:33:21,040 INFO Start polling
+2026-01-15 17:33:23,602 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:33:25,032 INFO Update id=6939262 is handled. Duration 421 ms by bot id=8584519010
+2026-01-15 17:33:44,109 INFO Update id=6939263 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 17:33:58,180 INFO Update id=6939264 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 17:34:05,258 INFO Update id=6939265 is handled. Duration 157 ms by bot id=8584519010
+2026-01-15 17:34:20,930 INFO Update id=6939266 is handled. Duration 157 ms by bot id=8584519010
+2026-01-15 17:34:26,259 INFO Update id=6939267 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 17:34:40,929 INFO Update id=6939268 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 17:34:44,250 INFO Update id=6939269 is handled. Duration 156 ms by bot id=8584519010
+2026-01-15 17:34:54,439 INFO Update id=6939270 is handled. Duration 172 ms by bot id=8584519010
+2026-01-15 17:35:00,710 INFO User 1408059701 saved topics: ['C# programming', 'Self-confidence', 'Pipi']
+2026-01-15 17:35:00,924 INFO Update id=6939271 is handled. Duration 219 ms by bot id=8584519010
+2026-01-15 17:35:07,048 INFO Update id=6939272 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 17:35:11,879 INFO Update id=6939273 is handled. Duration 235 ms by bot id=8584519010
+2026-01-15 17:35:17,200 INFO Update id=6939274 is handled. Duration 187 ms by bot id=8584519010
+2026-01-15 17:35:20,236 INFO Update id=6939275 is handled. Duration 219 ms by bot id=8584519010
+2026-01-15 17:43:56,167 INFO Polling stopped
+2026-01-15 17:43:56,168 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 17:43:56,168 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 17:43:56,420 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:43:56,421 INFO Bot stopped by user
+2026-01-15 17:44:09,183 INFO Start polling
+2026-01-15 17:44:09,672 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:44:24,793 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 17:44:24,793 INFO Update id=6939276 is handled. Duration 2593 ms by bot id=8584519010
+2026-01-15 17:44:28,336 INFO Update id=6939277 is handled. Duration 405 ms by bot id=8584519010
+2026-01-15 17:45:19,052 INFO Polling stopped
+2026-01-15 17:45:19,053 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 17:45:19,053 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 17:45:19,316 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:45:19,317 INFO Bot stopped by user
+2026-01-15 17:45:27,690 INFO Start polling
+2026-01-15 17:45:28,134 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:45:28,963 INFO Update id=6939278 is handled. Duration 734 ms by bot id=8584519010
+2026-01-15 17:45:34,085 INFO Update id=6939279 is handled. Duration 171 ms by bot id=8584519010
+2026-01-15 17:45:38,943 INFO Update id=6939280 is handled. Duration 172 ms by bot id=8584519010
+2026-01-15 17:45:44,948 INFO Update id=6939281 is handled. Duration 156 ms by bot id=8584519010
+2026-01-15 17:45:50,198 INFO Update id=6939282 is handled. Duration 156 ms by bot id=8584519010
+2026-01-15 17:45:55,912 INFO Update id=6939283 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 17:46:02,201 INFO Update id=6939284 is handled. Duration 172 ms by bot id=8584519010
+2026-01-15 17:46:04,052 INFO Update id=6939285 is handled. Duration 141 ms by bot id=8584519010
+2026-01-15 17:46:07,187 INFO Update id=6939286 is handled. Duration 171 ms by bot id=8584519010
+2026-01-15 17:46:10,204 INFO Update id=6939287 is handled. Duration 155 ms by bot id=8584519010
+2026-01-15 17:46:15,496 INFO Update id=6939288 is handled. Duration 281 ms by bot id=8584519010
+2026-01-15 17:46:19,539 INFO Update id=6939289 is handled. Duration 141 ms by bot id=8584519010
+2026-01-15 17:46:23,163 INFO Update id=6939290 is handled. Duration 141 ms by bot id=8584519010
+2026-01-15 17:46:25,945 INFO Update id=6939291 is handled. Duration 172 ms by bot id=8584519010
+2026-01-15 17:46:34,032 INFO Update id=6939292 is handled. Duration 108 ms by bot id=8584519010
+2026-01-15 17:46:36,055 INFO Update id=6939293 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 17:46:42,016 INFO Update id=6939294 is handled. Duration 266 ms by bot id=8584519010
+2026-01-15 17:46:43,953 INFO Update id=6939295 is handled. Duration 140 ms by bot id=8584519010
+2026-01-15 17:46:48,423 INFO Update id=6939296 is handled. Duration 141 ms by bot id=8584519010
+2026-01-15 17:46:50,552 INFO Update id=6939297 is handled. Duration 187 ms by bot id=8584519010
+2026-01-15 17:46:56,082 INFO Update id=6939298 is handled. Duration 187 ms by bot id=8584519010
+2026-01-15 17:47:01,966 INFO Update id=6939299 is handled. Duration 140 ms by bot id=8584519010
+2026-01-15 17:47:05,265 INFO User 1408059701 saved topics: ['Python', 'C++', 'Maternity', 'Babies', 'Animals', 'Biology', 'Chemistry', 'Friends', 'Studies', 'Jewelry']
+2026-01-15 17:47:05,416 INFO Update id=6939300 is handled. Duration 155 ms by bot id=8584519010
+2026-01-15 17:48:14,282 INFO Polling stopped
+2026-01-15 17:48:14,284 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 17:48:14,284 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 17:48:14,539 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 17:48:14,540 INFO Bot stopped by user
+2026-01-15 18:03:22,339 INFO Start polling
+2026-01-15 18:03:22,792 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 18:03:43,527 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 18:03:43,527 INFO Update id=6939301 is handled. Duration 625 ms by bot id=8584519010
+2026-01-15 18:03:59,864 INFO Help requested by user vnvid_imnida
+2026-01-15 18:03:59,864 INFO Update id=6939302 is handled. Duration 171 ms by bot id=8584519010
+2026-01-15 18:04:17,619 INFO Update id=6939303 is handled. Duration 141 ms by bot id=8584519010
+2026-01-15 18:04:22,053 INFO Polling stopped
+2026-01-15 18:04:22,053 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 18:04:22,053 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 18:04:22,310 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 18:04:22,311 INFO Bot stopped by user
+2026-01-15 21:16:22,570 INFO Start polling
+2026-01-15 21:16:23,398 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:16:47,889 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 21:16:47,889 INFO Update id=6939304 is handled. Duration 530 ms by bot id=8584519010
+2026-01-15 21:16:51,688 INFO Update id=6939305 is handled. Duration 313 ms by bot id=8584519010
+2026-01-15 21:17:02,229 INFO Update id=6939306 is handled. Duration 483 ms by bot id=8584519010
+2026-01-15 21:17:23,420 INFO Polling stopped
+2026-01-15 21:17:23,421 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 21:17:23,421 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 21:17:23,676 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:17:23,678 INFO Bot stopped by user
+2026-01-15 21:17:35,731 INFO Start polling
+2026-01-15 21:17:36,092 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:17:37,570 INFO Update id=6939307 is handled. Duration 391 ms by bot id=8584519010
+2026-01-15 21:17:45,790 INFO Polling stopped
+2026-01-15 21:17:45,791 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 21:17:45,791 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 21:17:46,048 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:17:46,049 INFO Bot stopped by user
+2026-01-15 21:32:07,689 INFO Start polling
+2026-01-15 21:32:08,094 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:34:12,157 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 21:34:12,157 INFO Update id=6939308 is handled. Duration 563 ms by bot id=8584519010
+2026-01-15 21:34:14,809 INFO Update id=6939309 is handled. Duration 155 ms by bot id=8584519010
+2026-01-15 21:34:29,686 INFO Update id=6939310 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:34:37,614 INFO Update id=6939311 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:34:42,371 INFO Update id=6939312 is handled. Duration 109 ms by bot id=8584519010
+2026-01-15 21:34:48,052 INFO Update id=6939313 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:34:53,063 INFO Update id=6939314 is handled. Duration 156 ms by bot id=8584519010
+2026-01-15 21:34:58,886 INFO Update id=6939315 is handled. Duration 172 ms by bot id=8584519010
+2026-01-15 21:35:01,187 INFO Update id=6939316 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:35:06,311 INFO Update id=6939317 is handled. Duration 108 ms by bot id=8584519010
+2026-01-15 21:35:09,294 INFO Update id=6939318 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:35:12,122 INFO Update id=6939319 is handled. Duration 109 ms by bot id=8584519010
+2026-01-15 21:35:14,050 INFO Update id=6939320 is handled. Duration 139 ms by bot id=8584519010
+2026-01-15 21:35:16,485 INFO Update id=6939321 is handled. Duration 140 ms by bot id=8584519010
+2026-01-15 21:35:18,470 INFO Update id=6939322 is handled. Duration 155 ms by bot id=8584519010
+2026-01-15 21:35:22,434 INFO Update id=6939323 is handled. Duration 108 ms by bot id=8584519010
+2026-01-15 21:35:24,429 INFO Update id=6939324 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:35:27,252 INFO Update id=6939325 is handled. Duration 140 ms by bot id=8584519010
+2026-01-15 21:35:29,023 INFO Update id=6939326 is handled. Duration 109 ms by bot id=8584519010
+2026-01-15 21:35:32,120 INFO Update id=6939327 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:35:34,451 INFO Update id=6939328 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:35:37,990 INFO Update id=6939329 is handled. Duration 156 ms by bot id=8584519010
+2026-01-15 21:35:40,415 INFO Update id=6939330 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:35:48,807 INFO Update id=6939331 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:35:53,875 INFO Update id=6939332 is handled. Duration 140 ms by bot id=8584519010
+2026-01-15 21:36:01,004 INFO User vnvid_imnida saved topics: ['Python', 'Family', 'Kids', 'Animals', 'Sex', 'Health', 'Magic', 'Google', 'Politocs', 'Economics']
+2026-01-15 21:36:01,233 INFO Update id=6939333 is handled. Duration 218 ms by bot id=8584519010
+2026-01-15 21:36:23,902 INFO Update id=6939334 is handled. Duration 172 ms by bot id=8584519010
+2026-01-15 21:36:33,575 INFO Update id=6939335 is handled. Duration 141 ms by bot id=8584519010
+2026-01-15 21:36:36,514 INFO Update id=6939336 is handled. Duration 109 ms by bot id=8584519010
+2026-01-15 21:36:40,447 INFO Update id=6939337 is handled. Duration 125 ms by bot id=8584519010
+2026-01-15 21:36:46,533 INFO Update id=6939338 is handled. Duration 140 ms by bot id=8584519010
+2026-01-15 21:36:54,536 INFO Update id=6939339 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 21:44:35,892 INFO Polling stopped
+2026-01-15 21:44:35,893 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 21:44:35,893 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 21:44:36,154 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:44:36,158 INFO Bot stopped by user
+2026-01-15 21:44:45,634 INFO Start polling
+2026-01-15 21:44:46,114 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:44:48,355 INFO Update id=6939340 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 21:44:54,746 INFO Update id=6939341 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 21:45:07,382 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-15 21:45:07,383 INFO Update id=6939342 is handled. Duration 828 ms by bot id=8584519010
+2026-01-15 21:45:10,963 INFO Update id=6939343 is not handled. Duration 0 ms by bot id=8584519010
+2026-01-15 21:46:15,961 INFO Polling stopped
+2026-01-15 21:46:15,962 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 21:46:15,962 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 21:46:16,216 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:46:16,218 INFO Bot stopped by user
+2026-01-15 21:46:21,712 INFO Start polling
+2026-01-15 21:46:22,204 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:46:24,547 INFO Update id=6939344 is handled. Duration 436 ms by bot id=8584519010
+2026-01-15 21:46:28,464 INFO Update id=6939345 is handled. Duration 156 ms by bot id=8584519010
+2026-01-15 21:47:20,633 INFO Polling stopped
+2026-01-15 21:47:20,633 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 21:47:20,633 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 21:47:20,885 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:47:20,888 INFO Bot stopped by user
+2026-01-15 21:47:35,851 INFO Start polling
+2026-01-15 21:47:36,367 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:47:37,895 INFO Help requested by user vnvid_imnida
+2026-01-15 21:47:37,895 INFO Update id=6939346 is handled. Duration 484 ms by bot id=8584519010
+2026-01-15 21:49:08,641 INFO Polling stopped
+2026-01-15 21:49:08,642 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-15 21:49:08,642 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-15 21:49:08,896 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-15 21:49:08,898 INFO Bot stopped by user
+2026-01-19 20:13:45,276 INFO Start polling
+2026-01-19 20:13:45,448 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-19 20:14:15,611 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-19 20:14:15,611 INFO Update id=6939347 is handled. Duration 312 ms by bot id=8584519010
+2026-01-19 20:14:18,610 INFO Update id=6939348 is handled. Duration 140 ms by bot id=8584519010
+2026-01-19 20:14:22,472 INFO Update id=6939349 is handled. Duration 77 ms by bot id=8584519010
+2026-01-19 20:14:26,833 INFO Update id=6939350 is handled. Duration 78 ms by bot id=8584519010
+2026-01-19 20:14:29,323 INFO Update id=6939351 is handled. Duration 77 ms by bot id=8584519010
+2026-01-19 20:14:34,341 INFO Update id=6939352 is handled. Duration 78 ms by bot id=8584519010
+2026-01-19 20:14:36,513 INFO Update id=6939353 is handled. Duration 77 ms by bot id=8584519010
+2026-01-19 20:14:39,284 INFO User vnvid_imnida saved topics: ['Python', 'C++']
+2026-01-19 20:14:39,419 INFO Update id=6939354 is handled. Duration 140 ms by bot id=8584519010
+2026-01-19 20:14:45,051 INFO Polling stopped
+2026-01-19 20:14:45,052 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-19 20:14:45,052 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-19 20:14:45,315 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-19 20:14:45,319 INFO Bot stopped by user
+2026-01-19 20:19:37,261 INFO Start polling
+2026-01-19 20:19:37,429 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - '\U0001f4cb NewsDigest'
+2026-01-19 20:19:37,804 INFO New user: ID=1408059701, Username=@vnvid_imnida, Name=\ub2e4\uc774\uc560\ub098 \uc0ac\ud53c\ub098 | Diana Safina
+2026-01-19 20:19:37,804 INFO Update id=6939355 is handled. Duration 328 ms by bot id=8584519010
+2026-01-19 20:19:47,264 INFO Update id=6939356 is handled. Duration 172 ms by bot id=8584519010
+2026-01-19 20:19:57,102 INFO Update id=6939357 is handled. Duration 77 ms by bot id=8584519010
+2026-01-19 20:20:05,406 INFO Update id=6939358 is handled. Duration 109 ms by bot id=8584519010
+2026-01-19 20:20:18,391 INFO Update id=6939359 is handled. Duration 77 ms by bot id=8584519010
+2026-01-19 20:20:24,992 INFO Update id=6939360 is handled. Duration 94 ms by bot id=8584519010
+2026-01-19 20:20:28,843 INFO Update id=6939361 is handled. Duration 62 ms by bot id=8584519010
+2026-01-19 20:20:35,245 INFO User vnvid_imnida saved topics: ['Python', 'C++']
+2026-01-19 20:20:35,349 INFO Update id=6939362 is handled. Duration 108 ms by bot id=8584519010
+2026-01-19 20:48:50,369 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-01-19 20:48:50,369 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8584519010)
+2026-01-19 20:49:01,666 INFO Connection established (tryings = 1, bot id = 8584519010)
+2026-02-04 20:27:36,579 INFO Start polling
+2026-02-04 20:27:36,844 INFO Run polling for bot @PersonalNewsDigestBot id=8584519010 - 'рџ“‹ NewsDigest'
+2026-02-04 20:28:36,052 INFO New user: ID=6275748120, Username=@sergtyalle, Name=ALS
+2026-02-04 20:28:36,053 INFO Update id=6939363 is handled. Duration 363 ms by bot id=8584519010
+2026-02-04 20:28:44,097 INFO Update id=6939364 is handled. Duration 121 ms by bot id=8584519010
+2026-02-04 20:28:47,675 INFO Update id=6939365 is handled. Duration 92 ms by bot id=8584519010
+2026-02-04 20:28:53,306 INFO Update id=6939366 is handled. Duration 102 ms by bot id=8584519010
+2026-02-04 20:28:55,885 INFO Update id=6939367 is handled. Duration 124 ms by bot id=8584519010
+2026-02-04 20:28:58,424 INFO User sergtyalle saved topics: ['РЎРїРѕСЂС‚']
+2026-02-04 20:28:58,543 INFO Update id=6939368 is handled. Duration 119 ms by bot id=8584519010
+2026-02-04 20:29:00,018 INFO Update id=6939369 is not handled. Duration 0 ms by bot id=8584519010
+2026-02-04 20:31:01,576 WARNING Received SIGINT signal
+2026-02-04 20:31:01,576 INFO Polling stopped for bot @PersonalNewsDigestBot id=8584519010 - 'рџ“‹ NewsDigest'
+2026-02-04 20:31:01,576 INFO Polling stopped
